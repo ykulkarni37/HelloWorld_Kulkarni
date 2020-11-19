@@ -1,0 +1,23 @@
+import java.util.Scanner;
+import java.lang.Math;
+
+public class Lab10 {
+    public static void main(String[] args) {
+        Scanner scnr = new Scanner(System.in);
+
+
+        System.out.println("Enter wall height (feet):");
+        double wallHeight = scnr.nextDouble();
+        System.out.println("Enter wall width (feet):");
+        double wallWidth = scnr.nextDouble();
+
+        double wallArea = wallHeight*wallWidth;
+        System.out.println("Wall area: " + wallArea + " square feet");
+
+        double paintGallon = wallArea/350;
+        System.out.println("Paint needed: " + paintGallon + " gallons");
+
+        System.out.println("Cans needed: " + Math.round(paintGallon) + " can(s)");
+
+    }
+}
